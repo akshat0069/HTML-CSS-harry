@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout and SetInterval</title>
+</head>
+<body>
+    <div class="container">
+    time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is tut 58");
+        // SetTimeOut--> allows us to run the function once after the interval of time 
+        // clearTimeOut--> allows us to run the function repetedly after the interval of time 
+
+        function greet(name,byeText){
+            console.log("hello good morning "+ name +" "+ byeText);
+        }
+        // timeOut=setTimeout(greet , 5000 , "eric","take care");
+        // console.log(timeOut)/*gives the unique id of setTimeOut*/ 
+
+        // clearTimeout(timeOut);
+        // setTimeout(greet() , 5000 );---->wrong , as it is calling the function 
+
+
+    //    intervalID =setInterval(greet, 2000, "eric", "goodbye")
+    //    clearInterval(intervalID);
+    function displayTime(){
+        time=new Date();
+        console.log(time)
+        document.getElementById('time').innerHTML=time;
+    }
+    setInterval(displayTime,1000)
+    </script>
+</body>
+</html>

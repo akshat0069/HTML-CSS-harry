@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Syne+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* for subitems */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            font-family: 'Syne Mono', monospace;
+        }
+
+        .container {
+
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;
+            /*to bring container in center*/
+            background-color: sandybrown;
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(224, 201, 201);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+
+        }
+
+        #books {
+            clear: both;
+            /* float: left ; */
+            width: 100%;
+        }
+
+        p, h3 {
+            text-align: right;
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+            /* left vala overwrite krega right ko ,and center overwrite krega left ko means jo badme likha vo chlega */
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="item">
+            <h3>FRUITS</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, excepturi
+                quidem. Nisi officiis soluta ipsum ad veniam nihil sed quidem quam, consequatur ducimus a laudantium
+                molestiae non magnam dolorem, odio rerum. Deleniti, dolore? Vel. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vitae esse ipsa distinctio. Dolorum, fugiat sit doloribus officiis et officia, iste
+                quisquam necessitatibus magnam expedita, repudiandae commodi corporis cupiditate ratione laudantium.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>COMPUTER</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                excepturi quidem. Nisi officiis soluta ipsum ad veniam nihil sed quidem quam, consequatur ducimus a
+                laudantium molestiae non magnam dolorem, odio rerum. Deleniti, dolore? Vel. Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Et mollitia vitae consequatur quibusdam ex ducimus error doloribus minus?
+                Obcaecati sequi nemo quod asperiores tenetur sunt eius veniam earum voluptatem iusto?</p>
+        </div>
+        <div id="books" class="item">
+            <h3>BOOKS</h3>
+            <p id="bookspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, excepturi
+                quidem. Nisi officiis soluta ipsum ad veniam nihil sed quidem quam, consequatur ducimus a laudantium
+                molestiae non magnam dolorem, odio rerum. Deleniti, dolore? Vel.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>GLASSES</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, excepturi
+                quidem. Nisi officiis soluta ipsum ad veniam nihil sed quidem quam, consequatur ducimus a laudantium
+                molestiae non magnam dolorem, odio rerum. Deleniti, dolore? Vel.</p>
+        </div>
+    </div>
+</body>
+
+</html>

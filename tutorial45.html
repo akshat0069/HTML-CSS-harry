@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid+Media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar  '
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+
+
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+
+                background-color: cyan;
+            }
+            .container{
+                grid-template-areas:
+                    'navbar navbar navbar navbar  '
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+                }
+            span{
+    display: block;
+    text-align: center;
+}
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+
+                background-color: blueviolet;
+            }
+            .container{
+                grid-template-areas:
+                    'navbar navbar navbar navbar  '
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+                }
+                aside{
+                    display: none;
+                }
+                span{
+    display: block;
+    text-align: center;
+}
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+
+                background-color: rgb(231, 117, 10)
+                }
+                .container{
+                grid-template-areas:
+                    'navbar navbar navbar navbar  '
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+                }
+span{
+    display: block;
+    text-align: center;
+}
+            
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+
+                background-color: rgb(14, 235, 69);
+            }
+            span{
+   
+    
+}
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+           <span>Home</span>
+           <span>Contact</span>
+           <span>Services</span>
+           <span>About us</span>
+        </nav>
+        <section class="bdr">
+            <h2>
+                learn CSS in hindi
+            </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, quaerat repellat totam rerum architecto dignissimos hic atque laudantium ipsum soluta vel accusamus perspiciatis id, voluptatibus iusto minus? Iusto reiciendis dicta et corporis optio error cum non, natus officiis mollitia cumque sit dolore! Voluptatem omnis temporibus sint neque fugiat velit accusantium id, officiis pariatur numquam autem! A est dolorem qui modi consequuntur accusantium voluptatibus totam aliquam voluptatem. Perspiciatis corporis esse possimus nisi ratione architecto laborum asperiores quidem, sit unde tenetur quas nihil. Facere, sapiente totam quia quidem voluptate aut minima vero quaerat dicta. Dolores incidunt eos nesciunt atque fuga temporibus repellat laboriosam similique! Nulla, explicabo nesciunt quam veniam molestiae perferendis enim voluptatum consequatur, rerum cupiditate asperiores deserunt cumque dolorem eligendi facilis vel consectetur. Veniam, unde quasi!</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, neque sint sed modi consequatur odit quam saepe voluptatibus earum ad tempore ipsam libero dolor. Est amet veniam laborum officia perspiciatis eius soluta consectetur animi molestiae optio, modi non rem et magnam, in aliquam sed cum accusantium mollitia impedit inventore delectus dolor quia nihil. Perspiciatis iusto, non deleniti expedita accusamus eligendi commodi nemo hic, sit optio totam corporis cum molestias labore repudiandae quasi possimus? Itaque tempore reiciendis, ratione voluptatum repellendus unde.</p>
+        </aside>
+    </div>
+    <footer class="bdr"><h1>copyright codeing mafia</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, totam? Ducimus, nihil beatae. Ea tempore rerum nulla deserunt totam necessitatibus odit doloribus ab, tenetur quisquam fuga, laboriosam eum soluta sunt. Dignissimos maiores et, labore vel nulla sequi deleniti at quaerat doloribus voluptate doloremque ad dolores, modi illum sint pariatur tempora totam ut corrupti praesentium ab neque. Voluptatibus rerum distinctio ipsam!</p>
+    </footer>
+</body>
+
+</html>

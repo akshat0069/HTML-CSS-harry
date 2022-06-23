@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+
+            /* to remove space from top and left  */
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            /*use to make background image light*/
+        }
+
+        .navigation {
+            font-family: 'Source Code Pro', monospace;
+            ;
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+
+        section {
+            height: 500px;
+            font-family: 'Source Code Pro', monospace;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+    content:"this is content"
+} */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptate eveniet corrupti deleniti
+            facilis vel debitis placeat delectus eaque velit itaque reiciendis nam optio modi, sequi dolorem ad odit
+            officia? Maxime eaque illum fugiat?</p>
+    </section>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        this is Arrow functins tutorial
+    </div>
+    <script>
+        // Arrow function 
+        // let greet = () => {
+        //     console.log("good morning");
+        // }
+
+// shortcut
+        let greet = () => console.log("good morning");
+        
+// ---------------------------------------------------------
+        // let sum = (a, b) => {
+        //     return a + b;
+        // }
+// shortcut
+        let sum = (a, b) => a+b;
+
+        let half=a=>a/2;
+
+
+        
+        // function greet(){
+        //     console.log("good morning");
+        // }
+        greet();
+
+        setTimeout(() => {
+            console.log("we are inside setTimeout ")
+        }, 3000);
+
+
+        let obj1={
+            greeting: "good morning",
+            names: ["eric", "rohan", "harry", "skillf"],
+            speak(){
+                    this.names.forEach((student)=>{
+                        console.log(this.greeting+"  hello guys  " +student);
+                    });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

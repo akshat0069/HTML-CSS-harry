@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(23, 166, 209);
+        }
+
+        .container {
+            background-color: #eb1fe0;
+            border: 3px solid rgb(216, 17, 17);
+            /*we can set margin/padding for top,bottom,left and right like this
+            padding-top: 73px;
+            padding-bottom: 73px;
+            padding-left: 33px;
+            padding-right: 33px;*/
+
+            padding: 23px 34px 76px 45px;
+            /*padding/margin : top right bottom left :*/
+            /* padding: 34px 19px:/*padding:y(top/bottom)  x(left/right)*/
+            margin: 34px 19px;
+            border-radius: 30px;
+            width: 533px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus modi soluta
+            eveniet sint odit, quis numquam natus tempora. Tenetur libero exercitationem laboriosam?</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus modi soluta
+            eveniet sint odit, quis numquam natus tempora. Tenetur libero exercitationem laboriosam?</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur necessitatibus modi soluta
+            eveniet sint odit, quis numquam natus tempora. Tenetur libero exercitationem laboriosam?</p>
+    </div>
+</body>
+
+</html>

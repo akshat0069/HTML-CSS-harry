@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            margin: auto;
+            width: 1200px;
+            border: 3px solid red;
+        } 
+
+         img {
+            margin: auto;
+            width: 134px;
+            display: block;
+            border-radius: 80px;
+        } 
+
+         h3 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0px;
+            text-align: center;
+            /*due to this we dont need width and margin in header thats why they are commented*/
+        } 
+
+        .box {
+            border: 4px solid black;
+            background-color: gray;
+            padding: 23px;
+            margin: 4px 0px;
+            box-sizing: border-box;
+            width: 33%;
+            display: inline-block;
+        } 
+
+         .container {
+            width: 1200px;
+            margin: auto;
+
+        } 
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://wallpapercave.com/wp/wp2661464.jpg" alt="">
+        <h3>
+            Cyber Warrior welcome's you
+        </h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id fugiat, at ipsum ipsa iusto eveniet
+                reprehenderit voluptatem totam! Tempore fugit sunt mollitia! Id eos cumque sequi recusandae ipsum illum
+                tenetur asperiores dolorum officia fugiat!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id fugiat, at ipsum ipsa iusto eveniet
+                reprehenderit voluptatem totam! Tempore fugit sunt mollitia! Id eos cumque sequi recusandae ipsum illum
+                tenetur asperiores dolorum officia fugiat!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id fugiat, at ipsum ipsa iusto eveniet
+                reprehenderit voluptatem totam! Tempore fugit sunt mollitia! Id eos cumque sequi recusandae ipsum illum
+                tenetur asperiores dolorum officia fugiat!</p>
+        </div>
+    </div>
+</body>
+
+</html>
